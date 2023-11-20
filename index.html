@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inchoo - front-end zadatak</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="upper-header">
+            <div class="upper-header__info container">
+                <div class="contact-support">
+                    <p class="contact-support__text">
+                        Contact our Customer Service
+                    </p>
+                    <a class="contact-support__link" href="tel:+3858003333567">
+                        <img src="./images/phone.png" alt="phone">    
+                        <span class="contact-support__link--text">(800) 333-3567</span>
+                    </a>
+                    <nav>
+                        <ul class="upper-nav">
+                            <li>
+                                <a class="upper-nav__link" href="#"><span>
+                                    About us
+                                </span></a>
+                            </li>
+                            <li>
+                                <a class="upper-nav__link" href="#"><span>
+                                    Contact us
+                                </span></a>
+                            </li>
+                            <li>
+                                <a class="upper-nav__link" href="#"><span>
+                                    Where to buy
+                                </span></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <p class="promo-msg">
+                    Promo message area - shipping advantages, special offers...
+                </p>
+                <a class="sign-in" href="#">
+                    <img src="./images/singIn.png" alt="Sing in" width="12" height="16">
+                    Sign in
+                </a>
+            </div>
+        </div>
+
+        <div class="main-nav">
+            <div class="main-nav__wrap container">
+                <div class="flex">
+                    <div class="mobile-menu">
+                        <img src="./images/hamburger-icon.svg" alt="Mobile menu icon" width="16" height="16">
+                    </div>
+
+                    <a class="logo" href="#">
+                        <img src="./images/inchoo-logo.svg" alt="Inchoo logo" width="154" height="52">
+                    </a>
+        
+                    <nav class="main-nav__container">
+                        <div class="mobile-nav">
+                            <div class="mobile-nav__header--box">
+                                <div class="contact-support">
+                                    <a class="contact-support__link" href="tel:+3858003333567">
+                                        <img src="./images/phone.png" alt="phone">    
+                                        <span class="contact-support__link--text">(800) 333-3567</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="mobile-nav__header">
+                                <div class="mobile-menu-close">
+                                    <img src="./images/green-close.svg" alt="Mobile menu icon" width="16" height="16">
+                                </div>
+            
+                                <a class="logo" href="#">
+                                    <img src="./images/inchoo-logo.svg" alt="Inchoo logo" width="154" height="52">
+                                </a>
+                            </div>
+                            <ul class="mobile-nav__list flex">
+                                <li class="mobile-nav__link">
+                                    <a href="#">
+                                        Soft top products
+                                    </a>
+                                </li>
+                                <li class="mobile-nav__link">
+                                    <a href="#">
+                                        Jeep accessories
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="contact-support">
+                                <a class="contact-support__link" href="tel:+3858003333567">
+                                    <img src="./images/phone.png" alt="phone">    
+                                    <span class="contact-support__link--text">(800) 333-3567</span>
+                                </a>
+                            </div>
+                        </div>
+                        <ul class="main-nav__list flex">
+                            <li class="main-nav__link">
+                                <a href="#">
+                                    Soft top products
+                                </a>
+                            </li>
+                            <li class="main-nav__link">
+                                <a href="#">
+                                    Jeep accessories
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="flex">
+                    <div class="search-wrap--desktop">
+                        <input type="text" placeholder="Search entire store here...">
+                        <button type="submit" class="search-icon">
+                            <img src="./images/search-icon.png" alt="Search" width="16" height="16">
+                        </button>
+                    </div>
+
+                    <div class="search-wrap--mobile">
+                        <span class="search-icon">
+                            <img src="./images/search-white.svg" alt="Search" width="16" height="16">
+                        </span>
+                    </div>
+        
+                    <a class="button-cart" href="#">
+                        <span class="button-cart__icon">
+                            <img src="./images/shopping-cart.svg" alt="Shoping cart" width="15" height="15">
+                        </span>
+                        <span class="button-cart__title">My cart</span>
+                        <span class="button-cart__arrow">
+                            <img src="./images/arrow-down.svg" alt="Arrow" width="7" height="7">
+                        </span>
+                        <span class="button-cart__number">
+                            2
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1 class="main-title">
+            Shopping cart
+        </h1>
+        <!-- Shooping cart wrap -->
+        <div class="shopping-cart-wrap">
+            <!-- Shopping cart -->
+            <div class="shopping-cart flex">
+                <!-- Shopping cart header -->
+                <div class="shopping-cart__header flex">
+                    <div class="shopping-list__item--header">
+                        <p>Item</p>
+                    </div>
+                    <div class="shopping-list__qty--header flex">
+                        <p>Qty</p>
+                        <p>SUBTOTAL</p>
+                    </div>
+                    <div class="shopping-list__actions--header">
+                    </div>
+                </div>
+                <!-- Single shopping cart item -->
+                <div class="shopping-list-wrap">
+                    <div class="shopping-list flex">
+                        <div class="shopping-list__item">
+                            <div class="shopping-list__item--content flex">
+                                <div class="image">
+                                    <img src="./images/jeep.png" alt="">
+                                </div>
+                                <div class="description-wrap flex">
+                                    <p class="description-text">Flip Top™ Complete Replacement Soft Top, Jeep 1976-1995 CJ-7/Wrangler, No doors included, Clear side and rear windows</p>
+                                    <p class="description-color">
+                                        <strong>Color: </strong>Black Denim, MATT
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shopping-list__qty">
+                            <div class="shopping-list__qty--header flex">
+                                <p>Qty</p>
+                                <p>SUBTOTAL</p>
+                            </div>
+                            <div class="shopping-list__qty--content flex">
+                                <div class="qty">
+                                    <input type="number" value="1" min="0">
+                                </div>     
+                                <div class="price">
+                                    <p>$150.00</p>
+                                </div>                  
+                            </div>
+                        </div>
+                        <div class="shopping-list__actions">
+                            <div class="shopping-list__actions--header">
+                            </div>
+                            <div class="shopping-list__actions--content flex">
+                                <div>
+                                    <img src="./images/edit.svg" alt="">
+                                </div>
+                                <div>
+                                    <img src="./images/delete.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shopping-list-wrap">
+                    <div class="shopping-list flex">
+                        <div class="shopping-list__item">
+                            <div class="shopping-list__item--content flex">
+                                <div class="image">
+                                    <img src="./images/jeep.png" alt="">
+                                </div>
+                                <div class="description-wrap flex">
+                                    <p class="description-text">Flip Top™ Complete Replacement Soft Top, Jeep 1976-1995 CJ-7/Wrangler, No doors included, Clear side and rear windows</p>
+                                    <p class="description-color">
+                                        <strong>Color: </strong>Black Denim
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shopping-list__qty">
+                            <div class="shopping-list__qty--header flex">
+                                <p>Qty</p>
+                                <p>SUBTOTAL</p>
+                            </div>
+                            <div class="shopping-list__qty--content flex">
+                                <div class="qty">
+                                    <input type="number" value="1" min="0">
+                                </div>     
+                                <div class="price">
+                                    <p>$100.00</p>
+                                </div>                  
+                            </div>
+                        </div>
+                        <div class="shopping-list__actions">
+                            <div class="shopping-list__actions--header">
+                            </div>
+                            <div class="shopping-list__actions--content flex">
+                                <div>
+                                    <img src="./images/edit.svg" alt="">
+                                </div>
+                                <div>
+                                    <img src="./images/delete.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="coupon-wrap flex">
+                    <div class="coupon-input">
+                        <input type="text" placeholder="Enter Discount Code">
+                        <button type="submit" class="button-coupon">Apply</button>
+                    </div>
+
+                    <button id="update-prices" class="button-update">Update shopping cart</button>
+                </div>
+            </div>
+            <!-- Shopping summary -->
+            <div class="summary">
+                <h3>Summary</h3>
+                <div class="order-total-container">
+                    <div class="shipping-tax-wrap flex">
+                        <p>Estimate shipping and tax</p>
+                        <div class="tax-info-icon">
+                            <img id="open-icon" src="./images/plus.svg" alt="Plus icon" width="16" height="16">
+                            <img id="close-icon" src="./images/green-close.svg" alt="Close" width="16" height="16">
+                        </div>
+                    </div>
+
+                    <div class="country-select-wrap">
+                        <div class="select-control">
+                            <label class="label" for="country">Country</label>
+                            <select name="country" id="country">
+                                <option value="United States">Country 1</option>
+                                <option value="Croatia">Country 2</option>
+                                <option value="Srbija">Country 3</option>
+                            </select>
+                        </div>
+                        
+                        <div class="select-control">
+                            <label class="label"  for="state">State/Province</label>
+                            <input type="text">
+                        </div>
+
+                        <div class="select-control">
+                            <label class="label" for="zip">ZIP/Postal Code</label>
+                            <input type="text">
+                        </div>
+
+                        <div class="select-control">
+                            <p class="label">Flat Rate</p>
+                            <div class="radio-wrap flex">
+                                <input type="checkbox" name="rate" id="rate" checked>
+                                <label class="radio label" for="rate">Fixed <span>($5.00)</span></label>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="subtotal-wrap">
+                        <div class="subtotal flex">
+                            <p class="subtotal--title">Subtotal</p>
+                            <p class="subtotal--price">$150.00</p>
+                        </div>
+                        <div class="shipping flex">
+                            <p class="shipping--title">Shipping <span>(Flat rate - Fixed)</span></p>
+                            <p class="shipping--price">$5.00</p>
+                        </div>
+                    </div>
+
+                    <div class="total flex">
+                        <p class="total--title">Order total</p>
+                        <p class="total--price">$155.00</p>
+                    </div>
+
+                    <div class="buttons-checkout">
+                        <button class="button--procced">Procced to checkout</button>
+                        <button class="button--multiple-addressess"">Checkout with multiple addresses</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-wrap container">
+            <p class="copyright">&copy; Jeep is a registered trademark of FCA US LLC.</p>
+            <ul class="footer__links">
+                <li class="footer__links--item">
+                    <a href="#">About us</a>
+                </li>
+                <li class="footer__links--item">
+                    <a href="#">Contact us</a>
+                </li>
+                <li class="footer__links--item">
+                    <a href="#">Search terms</a>
+                </li>
+                <li class="footer__links--item">
+                    <a href="#">Privacy and cookie policy</a>
+                </li>
+                <li class="footer__links--item">
+                    <a href="#">Instalation videos</a>
+                </li>
+            </ul>
+            <div class="contact-support">
+                <p class="contact-support__text">
+                    Contact our Customer Service
+                </p>
+                <a class="contact-support__link" href="tel:+3858003333567">
+                    <img src="./images/phone.png" alt="phone">    
+                    <span class="contact-support__link--text">(800) 333-3567</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
