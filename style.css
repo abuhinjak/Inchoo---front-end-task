@@ -213,6 +213,7 @@ a {
 .mobile-menu {
     cursor: pointer;
     display: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .mobile-nav {
@@ -247,6 +248,7 @@ a {
     background-color: var(--clr-light);
     border-radius: 50%;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .mobile-nav__header {
