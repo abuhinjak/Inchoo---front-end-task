@@ -790,6 +790,13 @@ a {
     border: 2px solid var(--clr-primary);
 }
 
+.select-control select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url('./images/arrow-down-black.svg') no-repeat right 5% center;
+}
+
 .select-control input:focus,
 .select-control select:focus {
     outline: none;
